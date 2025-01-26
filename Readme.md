@@ -39,10 +39,12 @@ This will create a `tsconfig.json` file in your project root. You can customize 
 ```json
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
     "outDir": "./dist",
     "rootDir": "./src",
+    "allowJs": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
