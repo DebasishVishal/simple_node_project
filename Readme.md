@@ -8,6 +8,12 @@ Install TypeScript and ts-node (for running TypeScript files directly):
 npm install typescript ts-node --save-dev
 ```
 
+Install and use tsx instead of ts-node:
+
+```bash
+npm install tsx --save-dev
+```
+
 Install type definitions for Node.js and other dependencies:
 
 ```bash
@@ -72,7 +78,7 @@ Update your `package.json` to include scripts for building and running the TypeS
   "scripts": {
     "start": "node dist/server.js",
     "build": "tsc",
-    "dev": "ts-node src/server.ts"
+    "dev": "tsx src/server.ts"
   }
 }
 ```
